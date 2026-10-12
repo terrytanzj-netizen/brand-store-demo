@@ -1,0 +1,8 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+:root { color-scheme: dark; } * { box-sizing: border-box; } body { margin: 0; background: #090a0c; color: #f4f4f0; font-family: Arial, sans-serif; } a { color: inherit; text-decoration: none; }
+.grain { background-image: radial-gradient(rgba(255,255,255,.06) 1px, transparent 1px); background-size: 5px 5px; }
+.product-art { position: relative; overflow: hidden; background: radial-gradient(circle at 55% 42%, var(--glow), transparent 32%), linear-gradient(145deg, #22252a, #0d0e11 70%); }
+.product-art::after { content:''; position:absolute; width:26%; height:62%; left:37%; top:20%; border-radius:28px; background:linear-gradient(110deg,#d9d8d1,#777b81 38%,#1c1e22 80%); box-shadow: 0 22px 45px rgba(0,0,0,.45); transform: rotate(14deg); }
+.product-art::before { content:''; position:absolute; z-index:1; width:11%; height:4%; left:45%; top:28%; border-radius:99px; background:#d7f36b; transform:rotate(14deg); box-shadow: 0 0 24px #d7f36b; }
+.hero-material { background-image: linear-gradient(90deg, rgba(9,10,12,.98) 0%, rgba(9,10,12,.72) 45%, rgba(9,10,12,.22) 100%), url('/assets/banners/cloud-hero.webp'); background-position: center; background-size: cover; }
+.hero-material { box-shadow: inset 0 -120px 100px rgba(9,10,12,.65); }
